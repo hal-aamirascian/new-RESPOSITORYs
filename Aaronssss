@@ -1,0 +1,97 @@
+int q = 0;
+int x = 0;
+int y = 0;
+
+void setup() {
+  size(1000,1000);
+  strokeWeight(8);
+  background(0,0,0);
+}
+
+void draw() {
+  //background(255,255,255);
+//  fill(100,100,100); //color
+  line(mouseX,mouseY,pmouseX,pmouseY);
+  ellipse(mouseX,mouseY,10,10);
+
+//if(keyPressed) {
+//if(key == 'q' || key == 'Q') {
+  //line(mouseX,mouseY,pmouseX,pmouseY);
+//stroke(q,x,y);
+
+ if (mousePressed == true) {
+   stroke(0);
+
+
+ }
+ 
+ if(mousePressed==false) {
+   stroke(0,255,0);
+ }
+
+
+if(keyPressed) {
+  if(key == 'x' || key == 'x') {
+    x = x - 5;
+    if(x > 0) {
+      x=0;
+    }}
+
+}
+
+if (keyPressed) {
+  if(key == 'q' || key == 'q') {
+    q = q + 5;
+    if(q > 255) {
+      q=255;
+    }}}
+
+
+
+if (keyPressed) {
+  if(key == 'x' || key == 'x') {
+    x = x + 5;
+    if(x > 255) {
+      x=255;
+    }}}
+
+if(keyPressed) {
+  if(key == 'q' || key == 'q') {
+    q = q - 5;
+    if(q > 0) {
+      q=0;
+    }}
+
+}
+
+
+
+
+
+if(keyPressed) {
+  if(key == 'y' || key == 'y') {
+    y = y - 5;
+    if(y > 0) {
+      y=0;
+    }}
+
+}
+
+
+if (keyPressed) {
+  if(key == 'y' || key == 'y') {
+    y = y + 5;
+    if(y > 255) {
+      y=255;
+    }}}
+
+}
+
+
+
+
+
+
+
+
+
